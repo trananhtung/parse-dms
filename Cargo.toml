@@ -1,0 +1,26 @@
+[package]
+name = "parse-dms"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Parse a coordinate string (degrees/minutes/seconds or decimal, with hemisphere) into decimal latitude/longitude. A faithful port of the parse-dms npm package."
+documentation = "https://docs.rs/parse-dms"
+repository = "https://github.com/trananhtung/parse-dms"
+homepage = "https://github.com/trananhtung/parse-dms"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["dms", "coordinates", "latitude", "longitude", "gps"]
+categories = ["parser-implementations", "science::geo"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+regex-lite = "0.1"
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
